@@ -18,11 +18,15 @@ class CyberbotApp extends StatelessWidget {
       return MaterialApp(
         title: 'Cyber Chat Bot',
         onGenerateRoute: _appRouter.generateRoute,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
+        theme: buildAppThemeData(),
       );
     });
+  }
+
+  ThemeData buildAppThemeData() {
+    return ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      );
   }
 }

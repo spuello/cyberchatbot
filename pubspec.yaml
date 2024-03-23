@@ -16,6 +16,7 @@ dependencies:
   #Automatically adapt UI to different screen sizes to support responsiveness
   sizer: ^2.0.15
   flutter_svg: ^2.0.10+1
+  lorem_ipsum: ^0.0.3
 
 dev_dependencies:
   flutter_test:

@@ -17,6 +17,7 @@ class CyberbotApp extends StatelessWidget {
       DeviceType deviceType,
     ) {
       return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Cyber Chat Bot',
         onGenerateRoute: _appRouter.generateRoute,
         theme: buildAppThemeData(),

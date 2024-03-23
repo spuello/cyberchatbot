@@ -1,5 +1,3 @@
-// Using Dart Sizer Packages methodhs to calculate and adapt
-//the app Ui based on the desing references
 import 'package:sizer/sizer.dart';
 
 extension ResponsiveCalculation on num {

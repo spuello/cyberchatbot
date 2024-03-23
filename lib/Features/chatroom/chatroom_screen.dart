@@ -1,12 +1,14 @@
-
 import 'package:cyberchatbot/common/dart_extensions/build_context_extension.dart';
 import 'package:cyberchatbot/common/dart_extensions/sizer_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../common/constants/asset_path.dart';
 import '../../theme/app_colors.dart';
+import '../Chatroom/chatroom_screen.dart';
 import 'chat_message_input.dart';
+import 'empty_conversation.dart';
 
 class ChatroomScreen extends StatelessWidget {
   const ChatroomScreen({super.key});
@@ -16,7 +18,7 @@ class ChatroomScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.kEEEEF3,
+      backgroundColor: AppColors.kEFF2F7,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(_toolbarHeight.dH),
         child: AppBar(
@@ -74,16 +76,13 @@ class ChatroomScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Expanded(
-            child: Text(
-              'CHATROOM SCREEN',
-              style: TextStyle(fontSize: 20.fS),
-            ),
+            child: EmptyConversation(),
           ),
-          const ChatMessageInput()
+          ChatMessageInput()
         ],
       ),
     );

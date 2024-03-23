@@ -10,6 +10,7 @@ extension BuildContextExtension on BuildContext {
   TextStyle get subtitle2 => TextStyles.subtitle2;
 
   TextStyle get body1 => TextStyles.body1;
+  TextStyle get body1Medium => TextStyles.body1Medium;
 
   TextStyle get body2 => TextStyles.body2;
 

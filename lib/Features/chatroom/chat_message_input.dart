@@ -50,7 +50,7 @@ class _ChatMessageInputState extends State<ChatMessageInput> {
                     contentPadding: EdgeInsets.only(
                         left: 16.dW, right: 24.dW, bottom: 12.dH, top: 12.dH),
                     filled: true,
-                    fillColor: AppColors.kEEEEF3,
+                    fillColor: AppColors.kEFF2F7,
                     focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
                         color: Colors.transparent,

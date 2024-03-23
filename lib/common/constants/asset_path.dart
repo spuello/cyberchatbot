@@ -1,5 +1,6 @@
 abstract class AssetPath {
   static const avatars = _Avatar();
+  static const illustration = _Illustration();
 }
 
 class _Avatar {
@@ -7,3 +8,10 @@ class _Avatar {
 
   const _Avatar();
 }
+
+class _Illustration {
+  final emptyChatIllustration = 'assets/images/empty_chat_illustration.svg';
+
+  const _Illustration();
+}
+

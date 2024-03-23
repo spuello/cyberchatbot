@@ -68,6 +68,21 @@ abstract class TextStyles {
     );
   }
 
+
+  static TextStyle get body1Medium {
+    final font = 16.fS;
+    const fontWeight = FontWeight.w500;
+    final lineHeight = 21.fS;
+    final letterSpacing = 0.15.fS;
+
+    return _base.copyWith(
+      fontSize: font,
+      fontWeight: fontWeight,
+      height: lineHeight / font,
+      letterSpacing: letterSpacing,
+    );
+  }
+
   static TextStyle get body2 {
     final font = 14.fS;
     const fontWeight = FontWeight.w500;

@@ -2,16 +2,14 @@ import 'package:cyberchatbot/common/dart_extensions/build_context_extension.dart
 import 'package:cyberchatbot/common/dart_extensions/sizer_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sizer/sizer.dart';
 
 import '../../common/constants/asset_path.dart';
 import '../../theme/app_colors.dart';
-import '../Chatroom/chatroom_screen.dart';
-import 'chat_message_input.dart';
+import 'conversation_message_input.dart';
 import 'empty_conversation.dart';
 
-class ChatroomScreen extends StatelessWidget {
-  const ChatroomScreen({super.key});
+class ConversationScreen extends StatelessWidget {
+  const ConversationScreen({super.key});
 
   static const double _toolbarHeight = 75.0;
 
@@ -88,4 +86,3 @@ class ChatroomScreen extends StatelessWidget {
     );
   }
 }
-

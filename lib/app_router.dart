@@ -1,6 +1,6 @@
+import 'package:cyberchatbot/Features/conversation/conversation_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'Features/Chatroom/chatroom_screen.dart';
 
 class AppRouter {
   const AppRouter();
@@ -8,7 +8,7 @@ class AppRouter {
   Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case "/":
-        return _buildPage(const ChatroomScreen(), settings: settings);
+        return _buildPage(const ConversationScreen(), settings: settings);
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

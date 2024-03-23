@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Features/Chatroom /chatroom_screen.dart';
+import 'Features/Chatroom/chatroom_screen.dart';
 
 class AppRouter {
   const AppRouter();

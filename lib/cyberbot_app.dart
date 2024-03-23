@@ -1,9 +1,12 @@
-import 'package:cyberchatbot/Features/Chatroom%20/chatroom_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'app_router.dart';
+
 class CyberbotApp extends StatelessWidget {
   const CyberbotApp({super.key});
+
+  static const _appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +17,11 @@ class CyberbotApp extends StatelessWidget {
     ) {
       return MaterialApp(
         title: 'Cyber Chat Bot',
+        onGenerateRoute: _appRouter.generateRoute,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ChatroomScreen(),
       );
     });
   }

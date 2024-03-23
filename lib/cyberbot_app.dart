@@ -1,3 +1,4 @@
+import 'package:cyberchatbot/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -21,12 +22,5 @@ class CyberbotApp extends StatelessWidget {
         theme: buildAppThemeData(),
       );
     });
-  }
-
-  ThemeData buildAppThemeData() {
-    return ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      );
   }
 }

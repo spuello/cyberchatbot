@@ -1,3 +1,4 @@
+
 import 'package:cyberchatbot/common/dart_extensions/build_context_extension.dart';
 import 'package:cyberchatbot/common/dart_extensions/sizer_extension.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +6,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../common/constants/asset_path.dart';
 import '../../theme/app_colors.dart';
+import 'chat_message_input.dart';
 
 class ChatroomScreen extends StatelessWidget {
   const ChatroomScreen({super.key});
@@ -72,17 +74,19 @@ class ChatroomScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Expanded(
+            child: Text(
               'CHATROOM SCREEN',
               style: TextStyle(fontSize: 20.fS),
             ),
-          ],
-        ),
+          ),
+          const ChatMessageInput()
+        ],
       ),
     );
   }
 }
+

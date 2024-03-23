@@ -5,7 +5,7 @@ import 'app_colors.dart';
 ThemeData buildAppThemeData() {
   return ThemeData(
     fontFamily: "Montserrat",
-    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.k8F86BC),
+    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.k8175CB),
     useMaterial3: true,
   );
 }

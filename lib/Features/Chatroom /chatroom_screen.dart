@@ -1,3 +1,4 @@
+import 'package:cyberchatbot/common/dart_extensions/sizer_extension.dart';
 import 'package:flutter/material.dart';
 
 class ChatroomScreen extends StatefulWidget {
@@ -14,12 +15,13 @@ class _ChatroomScreenState extends State<ChatroomScreen> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               'CHATROOM SCREEN',
+              style: TextStyle(fontSize: 20.fS),
             ),
           ],
         ),

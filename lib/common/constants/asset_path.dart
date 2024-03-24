@@ -5,6 +5,7 @@ abstract class AssetPath {
 
 class _Avatar {
   final cartman = 'assets/avatars/cartman.svg';
+  final missCorrectAvatar = 'assets/avatars/miss_correct_avatar.svg';
 
   const _Avatar();
 }

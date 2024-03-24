@@ -31,10 +31,16 @@ class ConversationWidget extends StatelessWidget {
 
 final random = Random();
 final messages = List.generate(10, (index) {
-  final words = random.nextInt(28) + 3;
+  int words = 0;
+  if (index.isEven) {
+    words = random.nextInt(4) + 1;
+  } else {
+    words = random.nextInt(28) + 3;
+  }
+
   return MessageBoxData(
       text: loremIpsum(words: words),
-      alignment: words.isEven ? Alignment.topRight : Alignment.topLeft);
+      alignment: words.isOdd ? Alignment.topRight : Alignment.topLeft);
 }).toList();
 
 class MessageBoxData {

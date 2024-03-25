@@ -17,6 +17,11 @@ dependencies:
   sizer: ^2.0.15
   flutter_svg: ^2.0.10+1
   lorem_ipsum: ^0.0.3
+  xmpp_plugin: ^2.2.12
+  shared_preferences: ^2.2.2
+  device_info_plus: ^10.0.1
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.0
 
 dev_dependencies:
   flutter_test:

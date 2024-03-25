@@ -1,7 +1,6 @@
 import 'package:cyberchatbot/Features/conversation/conversation_message_input.dart';
 import 'package:cyberchatbot/common/dart_extensions/build_context_extension.dart';
 import 'package:cyberchatbot/common/dart_extensions/sizer_extension.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -10,6 +9,8 @@ import '../../theme/app_colors.dart';
 import 'conversation_widget.dart';
 
 class ConversationScreen extends StatelessWidget {
+  static const String routeName = 'conversation_screen';
+
   const ConversationScreen({super.key});
 
   static const double _toolbarHeight = 75.0;

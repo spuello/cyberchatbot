@@ -1,7 +1,9 @@
+import 'package:cyberchatbot/Features/splash/splash_screen.dart';
 import 'package:cyberchatbot/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'Features/conversation/conversation_screen.dart';
 import 'app_router.dart';
 
 class CyberbotApp extends StatelessWidget {
@@ -21,6 +23,7 @@ class CyberbotApp extends StatelessWidget {
         title: 'Cyber Chat Bot',
         onGenerateRoute: _appRouter.generateRoute,
         theme: buildAppThemeData(),
+        initialRoute: SplashScreen.routeName,
       );
     });
   }
